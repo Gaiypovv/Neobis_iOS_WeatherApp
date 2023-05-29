@@ -127,6 +127,8 @@ class ViewController: UIViewController {
             }
         }
         
+        
+        
         if weekModel.list.count >= 40 {
             let dayFiveList = Array(weekModel.list[32..<40])
             let dayFiveMaxTemp = dayFiveList.reduce(Double.leastNormalMagnitude) { max($0, $1.main.tempMax) }

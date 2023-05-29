@@ -118,6 +118,7 @@
 				7F890CDC2A21D74100D4B0D0 /* Views */,
 				7F890CDD2A21D74800D4B0D0 /* Model */,
 				7F890CDA2A21D72900D4B0D0 /* Delegate */,
+				7F890CF22A21E4C400D4B0D0 /* Font */,
 				7F890CCC2A21D6B000D4B0D0 /* Main.storyboard */,
 				7F890CCF2A21D6B100D4B0D0 /* Assets.xcassets */,
 				7F890CD12A21D6B100D4B0D0 /* LaunchScreen.storyboard */,
@@ -131,7 +132,6 @@
 			children = (
 				7F890CC62A21D6B000D4B0D0 /* AppDelegate.swift */,
 				7F890CC82A21D6B000D4B0D0 /* SceneDelegate.swift */,
-				7F890CF22A21E4C400D4B0D0 /* Font */,
 			);
 			path = Delegate;
 			sourceTree = "<group>";
