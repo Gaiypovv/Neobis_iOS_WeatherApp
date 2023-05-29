@@ -127,7 +127,8 @@ class ViewController: UIViewController {
             }
         }
         
-        
+        var codereview = "mastg"
+        var codereview1 = 12
         
         if weekModel.list.count >= 40 {
             let dayFiveList = Array(weekModel.list[32..<40])
