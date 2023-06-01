@@ -17,11 +17,10 @@ class WeekViewModel: WeekViewModelType {
     private var weekWeatherService: WeatherService
     private(set) var weekWeatherData: weekWelcome? {
         didSet {
-            bindWeekWeatherViewModelToController?()
+            
         }
     }
     
-    var bindWeekWeatherViewModelToController: (() -> Void)?
     var updateWeek: ((weekWelcome) -> Void)?
     
     init() {
