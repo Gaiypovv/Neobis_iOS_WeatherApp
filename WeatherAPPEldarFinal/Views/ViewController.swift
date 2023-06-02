@@ -140,19 +140,38 @@ class ViewController: UIViewController {
     }
     
     func selectImageForWeather(_ weatherCondition: String) -> UIImage? {
-        switch weatherCondition {
-        case "clouds":
-            return UIImage(named: "cloud")
-        case "rain":
+        enum Types: String {
+            case clouds
+            case rain
+            case clear
+            case snow
+        }
+        switch Types(rawValue: weatherCondition) {
+        case .clouds:
+            return UIImage(named: "clouds")
+        case .rain:
             return UIImage(named: "rain")
-        case "clear":
-            return UIImage(named: "sun")
-        case "snow":
+        case .clear:
+            return UIImage(named: "clear")
+        case .snow:
             return UIImage(named: "snow")
         default:
             return UIImage(named: "flash")
         }
     }
+//        switch weatherCondition {
+//        case "clouds":
+//            return UIImage(named: "cloud")
+//        case "rain":
+//            return UIImage(named: "rain")
+//        case "clear":
+//            return UIImage(named: "sun")
+//        case "snow":
+//            return UIImage(named: "snow")
+//        default:
+//            return UIImage(named: "flash")
+//        }
+//    }
     
     func getImageForWeatherCondition(_ weatherCondition: weekMainEnum) -> UIImage? {
         switch weatherCondition {
